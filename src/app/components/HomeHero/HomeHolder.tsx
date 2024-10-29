@@ -1,7 +1,7 @@
 "use client";
 
-const bannerCSS = "flex justify-start ";
-const clickable = "cursor-pointer ";
+const bannerCSS = "flex justify-start p-[14px] mx-[40px] max-h-[120px]";
+const clickable = "cursor-pointer max-w-[120px] h-auto";
 import { useRouter } from "next/navigation";
 
 const Banner = () => {

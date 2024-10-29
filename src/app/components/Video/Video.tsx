@@ -2,42 +2,35 @@
 
 import { useState } from "react";
 const videoCSS = "flex flex-row justify-center text-white";
-const description = "flex flex-col items-start ";
+const description = "flex flex-col items-start w-[615px] ";
 
 const Video = () => {
-  const [videoClicked, setVideoClicked] = useState(false);
-  const [videoSRC, setVideoSRC] = useState(
-    "https://player.vimeo.com/video/1022562284?autoplay=1&loop=0&muted=0&controls=1"
-  );
-
   return (
     <div className={videoCSS}>
-      <div
-        onClick={() => {
-          setVideoClicked(true);
-        }}
-      >
-        {videoClicked ? (
-          <iframe
-            className=""
-            src="https://player.vimeo.com/video/1022562284?autoplay=1&loop=0&muted=0&controls=1"
-          />
-        ) : (
-          <iframe
-            className=""
-            src="https://player.vimeo.com/video/1022562284?autoplay=1&loop=1&muted=1&controls=0"
-          />
-        )}
+      <div className="relative cursor-pointer">
+        <iframe
+          className="w-full h-full" // Set to full width and height
+          src={
+            "https://player.vimeo.com/video/1022562284?autoplay=1&loop=1&muted=1&controls=1"
+          }
+          style={{ aspectRatio: "16/9" }} // Maintain aspect ratio
+          allowFullScreen // Allow full-screen mode
+        />
       </div>
       <div className={description}>
-        <h1>I just had the most mind-blowing phone call 🤯...with an AI.</h1>
-        <h2>
+        <h1 className=" text-[60px] font-extrabold leading-[72px] tracking-[-0.04em] mb-7">
+          I just had the most mind-blowing phone call 🤯...{" "}
+          <span className="text-[#DF054A]">with an AI.</span>
+        </h1>
+        <h2 className="text-[20px] mb-7">
           As someone who's heard every pitch, I didn't think much could surprise
           me anymore, but today I got on the phone with Boardy and it was
           incredible.
         </h2>
-        <h2>Michele Romanow</h2>
-        <p>Serial Entrepreneur, Dragon on Dragon's Den.</p>
+        <h2 className="text-[20px] ">Michele Romanow</h2>
+        <p className="text-[14px] text-[#fff9]">
+          Serial Entrepreneur, Dragon on Dragon's Den.
+        </p>
       </div>
     </div>
   );

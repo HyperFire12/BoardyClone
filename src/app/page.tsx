@@ -6,12 +6,12 @@ import HomeVideo from "./components/Video/Video";
 const page = () => {
   return (
     <div className="bg-[#060C14]">
-      <div>
+      <div className="mb-20">
         <Banner />
         <HomeHolder />
         <Hero />
       </div>
-      <div>
+      <div className="my-20">
         <HomeVideo />
       </div>
     </div>

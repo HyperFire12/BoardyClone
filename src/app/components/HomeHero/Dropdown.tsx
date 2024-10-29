@@ -31,12 +31,14 @@ const uk: Country = {
   callingCode: "+44",
 };
 
-const buttonCSS = "px-4 py-2 bg-[#df054a] text-white rounded-full ";
-const dropdownCSS = "cursor-pointer p-2";
+const alignCSS = "relative w-full";
+const buttonCSS = "px-4 py-2 bg-[#df054a] text-white rounded-full basis-1/4 ";
+const dropdownCSS = "cursor-pointer p-2 basis-1/8 ";
 const textboxCSS =
-  "flex justify-center px-4 py-2 bg-white text-black rounded-full";
+  "flex justify-center px-4 py-2 bg-white text-black rounded-full ";
 const optionsCSS =
-  "border-solid border border-[#ccc] bg-white text-black max-h-52 overflow-y-auto p-2 -translate-y-3";
+  "border-solid border border-[#ccc] bg-white text-black max-h-52 overflow-y-auto p-2 -translate-y-3 w-full absolute ";
+const phoneNumberCSS = "grow ";
 
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -88,22 +90,27 @@ const Dropdown = () => {
   }, []);
 
   return (
-    <div>
+    <div className={alignCSS} ref={dropdownRef}>
       <div className={textboxCSS}>
         <div onClick={toggleDropdown} className={dropdownCSS}>
           <div className={inline}>
             <img src={selectedCountry.imgSRC} />
             <p>{selectedCountry.callingCode}</p>
-          </div>{" "}
+          </div>
         </div>
+        <span className="inline-block w-[0.25px] h-10 bg-[#787879] text-[#] ml-2 mr-3 opacity-30" />
         <input
           type="number"
           placeholder="Phone Number"
           onChange={(e) => {
             setPhoneNumber(e.target.value);
           }}
+          className={phoneNumberCSS}
         />
-        <button className={buttonCSS}>Call Me </button>
+        <button className={buttonCSS}>
+          <div>Call Me</div>
+          <div></div>
+        </button>
       </div>
       {isOpen && (
         <div className={optionsCSS}>
