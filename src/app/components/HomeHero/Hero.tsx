@@ -30,8 +30,8 @@ const Hero = () => {
           and opt into The Boardy Network
         </p>
       </div>
-      <div className="flex flex-col justify-center w-full ">
-        <p className="flex justify-center pb-5 text-[25px]">
+      <div className="flex flex-col justify-center w-full mt-[40px]">
+        <p className="flex justify-center pb-10 text-[25px]">
           My recent introductions
         </p>
         <VerticalCarousel />
