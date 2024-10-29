@@ -3,6 +3,7 @@ import Banner from "./components/HomeHero/Banner";
 import HomeHolder from "./components/HomeHero/HomeHolder";
 import HomeVideo from "./components/Video/Video";
 import Testimonials from "./components/Testimonials/Testimonials";
+import Footer from "./components/Footer";
 
 const page = () => {
   return (
@@ -17,6 +18,9 @@ const page = () => {
       </div>
       <div>
         <Testimonials />
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   );

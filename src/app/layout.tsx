@@ -22,6 +22,10 @@ export default function RootLayout({
         <meta name="description" content="This is a clone of boardy.ai" />
         <meta name="keywords" content="Next.js, React, Typescript" />
         <meta name="author" content="Christopher Leung" />
+        <link
+          rel="icon"
+          href="https://cdn.prod.website-files.com/6705831747c825be3fbcdeeb/6712bafb9c1b788a35e55d80_Untitled%20design%20(53)%203%20(4)%20(1).png"
+        />
       </head>
       <body>{children}</body>
     </html>

@@ -39,7 +39,7 @@ const textboxCSS =
   "flex justify-center px-4 py-2 bg-white text-black rounded-full ";
 const optionsCSS =
   "border-solid border border-[#ccc] bg-white text-black max-h-52 overflow-y-auto p-2 -translate-y-3 w-full absolute ";
-const phoneNumberCSS = "grow ";
+const phoneNumberCSS = "grow focus:outline-none";
 
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -102,9 +102,12 @@ const Dropdown = () => {
             <p>{selectedCountry.callingCode}</p>
           </div>
         </div>
-        <span className="inline-block w-[0.25px] h-10 bg-[#787879] text-[#] ml-2 mr-3 opacity-30" />
+        <span className="inline-block w-[0.25px] h-10 bg-[#787879] ml-2 mr-3 opacity-30" />
         <input
-          type="number"
+          type="tel"
+          required
+          autoComplete="off"
+          maxLength={256}
           placeholder="Phone Number"
           onChange={(e) => {
             setPhoneNumber(e.target.value);
