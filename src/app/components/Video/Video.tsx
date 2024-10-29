@@ -20,13 +20,13 @@ const Video = () => {
           <span className="text-[#DF054A]">with an AI.</span>
         </h1>
         <h2 className="text-[20px] mb-7">
-          As someone who's heard every pitch, I didn't think much could surprise
+          As someone who&apos;s heard every pitch, I didn&apos;t think much could surprise
           me anymore, but today I got on the phone with Boardy and it was
           incredible.
         </h2>
         <h2 className="text-[20px] ">Michele Romanow</h2>
         <p className="text-[14px] text-[#fff9]">
-          Serial Entrepreneur, Dragon on Dragon's Den.
+          Serial Entrepreneur, Dragon on Dragon&apos;s Den.
         </p>
       </div>
     </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import { getCountries, getCountryCallingCode } from "libphonenumber-js";
 import countries from "i18n-iso-countries";
 import enLocale from "i18n-iso-countries/langs/en.json";
@@ -44,6 +45,9 @@ const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState<Country>(us);
   const [phoneNumber, setPhoneNumber] = useState("");
+  if (phoneNumber) {
+    //Send to database
+  }
 
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -94,7 +98,7 @@ const Dropdown = () => {
       <div className={textboxCSS}>
         <div onClick={toggleDropdown} className={dropdownCSS}>
           <div className={inline}>
-            <img src={selectedCountry.imgSRC} />
+            <Image src={selectedCountry.imgSRC} alt="" />
             <p>{selectedCountry.callingCode}</p>
           </div>
         </div>
@@ -120,7 +124,7 @@ const Dropdown = () => {
               onClick={() => handleSelect(us)}
               className={inline + cursor + "m-2 "}
             >
-              <img src={us.imgSRC} />
+              <Image src={us.imgSRC} alt="" />
               <p>
                 {us.countryName} {us.callingCode}
               </p>
@@ -130,7 +134,7 @@ const Dropdown = () => {
               onClick={() => handleSelect(uk)}
               className={inline + cursor + "m-2 "}
             >
-              <img src={uk.imgSRC} />
+              <Image src={uk.imgSRC} alt="" />
               <p>
                 {uk.countryName} {uk.callingCode}
               </p>
@@ -143,7 +147,7 @@ const Dropdown = () => {
               onClick={() => handleSelect(country)}
               className={inline + cursor + "m-2 "}
             >
-              <img src={country.imgSRC} />
+              <Image src={country.imgSRC} alt="" />
               <p>
                 {country.countryName} {country.callingCode}
               </p>

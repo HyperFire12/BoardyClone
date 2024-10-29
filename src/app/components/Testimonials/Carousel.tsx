@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useSpring, animated, config } from "react-spring";
 import images from "../../assets/testimonials.json";
+import Image from "next/image";
 
 // Extended images array with duplicates for seamless looping
 const extendedImages = [...images, ...images];
@@ -50,7 +51,7 @@ const Carousel = () => {
       >
         {extendedImages.map((image, i) => (
           <div key={i} className="carousel-item min-w-[20%] px-[10px] relative">
-            <img
+            <Image
               src={image.image_url}
               alt={`Carousel item ${i + 1}`}
               className="w-full h-auto object-cover aspect-[3/4] rounded-[8px]"

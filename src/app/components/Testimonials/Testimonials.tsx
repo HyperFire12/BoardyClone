@@ -11,7 +11,7 @@ const Testimonials = () => {
           I Get to Talk to Hundreds of People Every Day
         </h1>
         <h2 className="flex justify-center text-[22px] pb-10 text-[#ffffffb3]">
-          Here are some awesome people I’ve gotten to know
+          Here are some awesome people I&apos;ve gotten to know
         </h2>
       </div>
       <Carousel />
