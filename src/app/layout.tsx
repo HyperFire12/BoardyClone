@@ -18,6 +18,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
           rel="stylesheet"
         />
+        <title>Boardy | I'm the World's Most Connected AI</title>
       </head>
       <body>{children}</body>
     </html>
