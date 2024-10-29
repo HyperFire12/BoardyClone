@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react";
 import { useSpring, animated, config } from "react-spring";
 import ItemHolder from "./ItemHolder";
-import data from "../../assets/introductions.json"; 
+import data from "../../assets/introductions.json";
 
 // Extended data array for seamless vertical looping
-const extendedData = [...data, ...data];
+const extendedData = [data[data.length - 1], ...data, ...data];
 
 const VerticalCarousel = () => {
   const [index, setIndex] = useState(1); // Start from the first item in the extended array

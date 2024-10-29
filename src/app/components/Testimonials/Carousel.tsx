@@ -6,7 +6,7 @@ import images from "../../assets/testimonials.json";
 import Image from "next/image";
 
 // Extended images array with duplicates for seamless looping
-const extendedImages = [...images, ...images];
+const extendedImages = [images[images.length - 1], ...images, ...images];
 
 const Carousel = () => {
   const [index, setIndex] = useState(1); // Start from the first image in the extended array
