@@ -55,6 +55,8 @@ const Carousel = () => {
               src={image.image_url}
               alt={`Carousel item ${i + 1}`}
               className="w-full h-auto object-cover aspect-[3/4] rounded-[8px]"
+              width={291}
+              height={403}
             />
             <div className="ml-2 w-3/4 nameplate absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-20 text-white px-2 py-1 rounded text-[0.9rem]">
               <p className="text-[24px]">{image.name}</p>

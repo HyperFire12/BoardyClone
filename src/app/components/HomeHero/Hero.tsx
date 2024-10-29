@@ -21,11 +21,11 @@ const Hero = () => {
         <p className="text-[#ffffffb3] ">
           By calling you agree to the{" "}
           <u>
-            <a href="www.youtube.com">Privacy Policy</a>
+            <a href="privacypolicy">Privacy Policy</a>
           </u>{" "}
           &{" "}
           <u>
-            <a href="www.youtube.com">Terms</a>
+            <a href="terms">Terms</a>
           </u>{" "}
           and opt into The Boardy Network
         </p>

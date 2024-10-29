@@ -98,7 +98,7 @@ const Dropdown = () => {
       <div className={textboxCSS}>
         <div onClick={toggleDropdown} className={dropdownCSS}>
           <div className={inline}>
-            <Image src={selectedCountry.imgSRC} alt="" />
+            <Image src={selectedCountry.imgSRC} alt="" width={24} height={24} />
             <p>{selectedCountry.callingCode}</p>
           </div>
         </div>
@@ -124,7 +124,7 @@ const Dropdown = () => {
               onClick={() => handleSelect(us)}
               className={inline + cursor + "m-2 "}
             >
-              <Image src={us.imgSRC} alt="" />
+              <Image src={us.imgSRC} alt="" width={24} height={24} />
               <p>
                 {us.countryName} {us.callingCode}
               </p>
@@ -134,7 +134,7 @@ const Dropdown = () => {
               onClick={() => handleSelect(uk)}
               className={inline + cursor + "m-2 "}
             >
-              <Image src={uk.imgSRC} alt="" />
+              <Image src={uk.imgSRC} alt="" width={24} height={24} />
               <p>
                 {uk.countryName} {uk.callingCode}
               </p>
@@ -147,7 +147,7 @@ const Dropdown = () => {
               onClick={() => handleSelect(country)}
               className={inline + cursor + "m-2 "}
             >
-              <Image src={country.imgSRC} alt="" />
+              <Image src={country.imgSRC} alt="" width={24} height={24} />
               <p>
                 {country.countryName} {country.callingCode}
               </p>

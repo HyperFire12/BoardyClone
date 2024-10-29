@@ -19,6 +19,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <title>Boardy | I&apos;m the World&apos;s Most Connected AI</title>
+        <meta name="description" content="This is a clone of boardy.ai" />
+        <meta name="keywords" content="Next.js, React, Typescript" />
+        <meta name="author" content="Christopher Leung" />
       </head>
       <body>{children}</body>
     </html>

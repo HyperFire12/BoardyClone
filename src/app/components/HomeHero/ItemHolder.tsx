@@ -18,6 +18,8 @@ const ItemHolder: React.FC<ItemHolderProps> = ({ time, content }) => {
         src="https://cdn.prod.website-files.com/67190baa260e061369ada0e1/67190baa260e061369ada119_sms.svg"
         loading="eager"
         alt=""
+        height={20}
+        width={20}
       />
       <p className="m-1 mx-2"> {time} </p>
       <Image
@@ -25,6 +27,8 @@ const ItemHolder: React.FC<ItemHolderProps> = ({ time, content }) => {
         src="https://cdn.prod.website-files.com/67190baa260e061369ada0e1/67190baa260e061369ada10d_Line%2035.svg"
         loading="eager"
         alt="vertical grey line separator"
+        height={24}
+        width={1}
       />
       <p className="m-1 mx-2"> {content} </p>
     </div>

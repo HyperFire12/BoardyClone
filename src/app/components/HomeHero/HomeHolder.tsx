@@ -19,6 +19,8 @@ const Banner = () => {
           className={clickable}
           src="https://cdn.prod.website-files.com/67190baa260e061369ada0e1/67190baa260e061369ada111_image%2012513770.avif"
           alt="Boardy"
+          width={120}
+          height={82}
         />
       </a>
     </div>
