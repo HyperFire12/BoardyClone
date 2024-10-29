@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 const videoCSS = "flex flex-row justify-center text-white";
 const description = "flex flex-col items-start w-[615px] ";
 
@@ -9,12 +6,12 @@ const Video = () => {
     <div className={videoCSS}>
       <div className="relative cursor-pointer">
         <iframe
-          className="w-full h-full" // Set to full width and height
+          className="w-full h-full"
           src={
             "https://player.vimeo.com/video/1022562284?autoplay=1&loop=1&muted=1&controls=1"
           }
-          style={{ aspectRatio: "16/9" }} // Maintain aspect ratio
-          allowFullScreen // Allow full-screen mode
+          style={{ aspectRatio: "16/9" }}
+          allowFullScreen
         />
       </div>
       <div className={description}>

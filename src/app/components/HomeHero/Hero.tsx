@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import Dropdown from "./Dropdown";
 import Introductions from "./Introductions";
 
@@ -9,7 +6,7 @@ const heroCSS = "flex flex-col justify-center items-center text-white";
 const Hero = () => {
   return (
     <div className={heroCSS}>
-      <div className="w-1/2 flex flex-col justify-center">
+      <div className="w-3/4 flex flex-col justify-center">
         <h1 className="flex justify-center pt-[61px] font-medium text-center text-[90px] leading-[90px] tracking-[-0.04em]">
           I'm the World's Most Connected AI
         </h1>
@@ -33,7 +30,7 @@ const Hero = () => {
           and opt into The Boardy Network
         </p>
       </div>
-      <div className="flex flex-col justify-center w-full">
+      <div className="flex flex-col justify-center w-full ">
         <p className="flex justify-center pb-5">My recent introductions</p>
         <Introductions />
       </div>

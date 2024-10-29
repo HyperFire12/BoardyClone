@@ -2,6 +2,7 @@ import Hero from "./components/HomeHero/Hero";
 import Banner from "./components/HomeHero/Banner";
 import HomeHolder from "./components/HomeHero/HomeHolder";
 import HomeVideo from "./components/Video/Video";
+import Testimonials from "./components/Testimonials/Testimonials";
 
 const page = () => {
   return (
@@ -13,6 +14,9 @@ const page = () => {
       </div>
       <div className="my-20">
         <HomeVideo />
+      </div>
+      <div>
+        <Testimonials />
       </div>
     </div>
   );
