@@ -1,5 +1,5 @@
 import Dropdown from "./Dropdown";
-import Introductions from "./Introductions";
+import VerticalCarousel from "./VerticalCarousel";
 
 const heroCSS = "flex flex-col justify-center items-center text-white";
 
@@ -31,8 +31,10 @@ const Hero = () => {
         </p>
       </div>
       <div className="flex flex-col justify-center w-full ">
-        <p className="flex justify-center pb-5">My recent introductions</p>
-        <Introductions />
+        <p className="flex justify-center pb-5 text-[25px]">
+          My recent introductions
+        </p>
+        <VerticalCarousel />
       </div>
     </div>
   );

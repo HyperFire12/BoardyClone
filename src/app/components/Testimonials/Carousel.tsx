@@ -5,11 +5,7 @@ import { useSpring, animated, config } from "react-spring";
 import images from "../../assets/testimonials.json";
 
 // Extended images array with duplicates for seamless looping
-const extendedImages = [
-  images[images.length - 1], // Clone last image at the start
-  ...images,
-  ...images, // Clone first image at the end
-];
+const extendedImages = [...images, ...images];
 
 const Carousel = () => {
   const [index, setIndex] = useState(1); // Start from the first image in the extended array
